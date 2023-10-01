@@ -1,13 +1,18 @@
 package com.example.wifi;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+/*
+ * NOTE:  Starting from Android 10 (API level 29) and above, there are restrictions on changing Wi-Fi state programmatically.
+ *        Android has tightened security and privacy measures.
+ *        So, This code will not work for Android 10 (API level 29) and above. 
+ */
 
 public class MainActivity extends AppCompatActivity {
 
